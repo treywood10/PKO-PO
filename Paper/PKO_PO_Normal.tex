@@ -1,0 +1,321 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} % Create 1 inch margins
+\usepackage{natbib} % Citation package 
+\usepackage{indentfirst} % Indent the first paragraph of the 1st paragraph of each new section. 
+\usepackage{setspace} % Package to set my line spacing
+\usepackage[bottom]{footmisc}
+\doublespacing % declare double space
+\interfootnotelinepenalty=999999999
+\usepackage{sectsty}
+\sectionfont{\normalfont\fontfamily{ptm}\fontsize{12}{12}\bfseries}
+\subsectionfont{\normalfont\fontfamily{ptm}\fontsize{12}{12}\bfseries\itshape}
+\usepackage{times} % Text font as TNR
+\usepackage{graphicx} % Include images 
+\usepackage{comment} % Pakeage to let me comment out large secitons at a time.
+\usepackage{xurl} % Fix urls on the page
+\usepackage{graphicx} % Include Graphics
+\usepackage{array}
+\usepackage[font=small]{caption} %Change the size of the "Figre XX" caption part. 
+\usepackage{subcaption}
+\usepackage{titling}
+\usepackage{hyperref} % Hyperlink to figures and bibliography
+\usepackage{fancyhdr} % All of this is to put the page number at the bottom right
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % This says to not put the line at the top of the apge that makes it "fancy".
+\setlength{\parindent}{1cm}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+\usepackage{soul} % Fix wrapping of underlined text
+\usepackage{xcolor}
+\usepackage{import}
+\usepackage{multirow}
+
+\newcommand{\fix}[1]{\section{FIX}\LARGE\color{red}#1}
+\newcommand{\Dan}[1]{\par\color{red}\underline{Note for Dan:} \color{black}#1}
+\newcommand{\UN}[1]{United Nations}
+\newcommand{\PKO}[1]{peacekeeping operation}
+\newcommand{\PKOs}[1]{peacekeeping operations}
+\providecommand{\keywords}[1]{\center\textbf{\textbf{Key words:}} #1}
+
+
+%%% Paper Info %%%%
+\title{Highly-Valued Peacekeepers \\
+\large The Effects of Individual Values and Context on the Preference for Peacekeepers}
+\author{Robert Wood \\
+University of Kentucky}
+\date{\today}
+
+\begin{document}
+
+\begin{titlingpage}
+\maketitle 
+
+\begin{abstract}
+\begin{singlespace}
+What shapes an individual’s desire for United Nations (UN) peacekeepers to intervene? The existing peacekeeping literature notes that UN peacekeepers can deter continued conflict, protect civilians, and develop the host state’s rule of law, but the literature cannot explain if the UN is the local population's most preferred intervener. I argue that individuals who value human rights and have confidence in the UN as a guarantor of human rights protection will prefer the UN to be responsible for peacekeeping compared to regional organizations or ad-hoc, state lead peacekeeping. However, noting the history of peacekeepers as violators of human rights, individuals who live in states that previously experienced a UN peacekeeping operation, value human rights, and have confidence in the UN will no longer prefer UN intervention. Leveraging questions from the fourth and fifth waves of the World Values Survey (2001 – 2008), the empirical results provide robust support for the conditional nature of civilian support for UN peacekeeping.
+% 158 words
+\end{singlespace}
+\end{abstract}
+\begin{center}
+\textbf{Keywords:} United Nations, Peacekeeping, Human Rights, Public Opinion \\
+\textbf{Words Used:} 9, 241 words
+\end{center}
+
+\end{titlingpage}
+
+
+
+\newpage
+
+On February 17, 2021, the Allied Democratic Forces in the Democratic Republic of the Congo invaded a local village leading to the deaths of 10 civilians. In response, a United Nations Stabilization Mission in the Democratic Republic of the Congo (MONUSCO) contingent quickly intervened, deterred continued rebel violence, and saved many lives. Villagers thanked the peacekeepers for their protection as many lives would have been lost without their presence \citep{BBC_2021}. However, not all civilians experience this level of protection. In the summer of 2016, women from South Sudan rushed to a base maintained by the United Nations Mission in South Sudan (UNMISS) hoping for protection from government soldiers. Instead of providing protection, UNMISS peacekeepers remained in their camp, passively allowing government soldiers to commit acts of sexual violence against the women seeking help. One civilian witness estimated that about 30 peacekeepers observed the incident from their watch towers and armoured vehicles \citep{patinkin_2016}. As a result of the actions by MONUSCO and UNMISS, civilians fostered or destroyed their trust in the mission's ability to intervene.
+% 176 words 
+
+Misconduct and inaction by United Nations peacekeepers damages civilian relationships that are critical for mission success. In interviews with about 55 peacekeepers that represent 20 different missions, \cite{furnari2015relationships} finds that peacekeepers cite strong relationships with the local population as a determining factor for mission effectiveness. For example, military contingents rely on civilian trust to facilitate the disarmament, demobilization, and reintegration process of former rebels. These civilians can provide information regarding both rebel compliance with peace and impending rebel actions of violence. As a result, strong peacekeeper-civilian relationships are paramount in the creation of lasting peace. 
+% 96 words
+
+Trust is a key heuristic in individual decision making \citep{carlin2013politics} and when trust is disrupted, individuals will seek to avoid the associated cause. Due to actions such as peacekeeper violations of human rights, civilians become wary of their `protectors' thereby undermining `hearts and minds' strategies necessary to generate the benefits of mission trust and support. Allowing civilian victimization undermines the potential for policy concessions and other conflict outcomes necessary for peace, particularly civilian trust \citep[Ex.][]{de2016civil,ottmann2017rebel,krcmaric2018varieties}. This disruption in trust rooted in valuations and violations of human rights can shift an individual's preference for United Nations peacekeeping from eager acceptance to frustrated rejection. The interplay between human rights valuations and trust in regard to United Nations peacekeeping motivates the following research questions: \textit{What shapes an individual's desire for United Nations peacekeepers to intervene? Does an individual's desire for United Nations peacekeepers change their state has experienced a mission?} 
+% 159 words
+
+I argue that an individual's valuations for human rights and trust in the United Nations affects their preference for the United Nations to sponsor peacekeeping efforts. Since the United Nations is observed to be the international protector of peace and human rights, individuals who value human rights and trust the \UN{} are more likely to prefer the \UN{} to lead peacekeeping missions. However, these same individuals are less likely to prefer the \UN{} when they come from a state that has ever experienced a mission. Leveraging questions from the World Values Survey and a sample of respondents from African states, I find evidence that supports the implications from my theoretical framework. The results of this study should inform policy makers to prioritize robust peacekeeper-civilian relationships that create trust and optimize mission effectiveness. Furthermore, this study sheds light on the underdeveloped literature on the public opinion of peacekeepers. 
+% 150 words
+
+\section*{Literature Review}
+
+When a state prepares for conflict intervention, the public becomes increasingly attentive to the purpose of the intervention. For example, the moral ground for humanitarian interventions generate high public approval compared to interventions with complex peace enforcement goals \citep{burk1999public}. On average, citizens punish their home state when it suffers causalities during intervention, but the costs against the state are reduced in the context of humanitarian action, adversarial restraint, and when the intervention is trending towards success \citep{eichenberg2005victory}. Citizens rely on heuristics as information shortcuts when considering intervention preferences, such as when Americans use the events of September 11, 2001, foreign policy involving Saddam Hussein, or al-Qaeda actions when considering international intervention. However, these negative associations and feelings of mission risk are overcome when military action reduces the size of perceived threats \citep{brownlee2020cognitive,haesebrouck2019follows}. 
+% 137 words
+
+In addition to state actors, individuals also form preferences concerning the actions of non-state actors, such as the \UN{}. Individuals who support the \UN{} normally are from states that participate in multilateral security agreements and occupy \UN{} leadership positions. This includes citizens from Norway, Sweden, and Denmark as their citizens understand the inner-workings and mission of the \UN{}. In contrast, citizens from states who believe their national security is limited by \UN{} action or who are disappointed in \UN{} dealings with other states hold negative opinions towards the institution. This trend applies to many English-speaking countries such as Canada, the United Kingdom, and the United States, especially after the admittance of communist China into the \UN{} \citep{millard1993international}. 
+% 126 words
+
+\subsection*{United Nations Intervention}
+
+While citizen opinions of \UN{} actions may vary between states, citizens are generally supportive of the \UN{} as an international intervention legitimiser. The \UN{} Security Council as an elite pact confers legitimacy to state applications of force. The \UN{} functions as a stamp of approval regarding state use of force as their approval signals that the state is acting within the bounds of international law thereby generating citizen support \citep{voeten2005political,appel2018intergovernmental}. This support for \UN{} approval becomes increasingly robust when the citizens have a cosmopolitan mindset \citep{ecker2016citizens} and believe that international institutions are best suited to handle issues related to building of the rule of law \citep{blair2019establishing} and trust \citep{glendon2004rule} after conflict. 
+% 124 words
+
+The most notable role of the \UN{} with respect intervention is the deployment of \PKOs{} to limit the spread of conflict. Peacekeeping operations are successful in limiting civilian targeting \citep{hultman2013united}, increasing the costs of continued violence \citep{hultman2014beyond}, and limiting warring party sexual violence \citep{johansson2019peacekeeping}. These findings are encouraging as they signify that the \UN{} aims to protect and uphold human rights in the most difficult circumstances \citep{howland2006peacekeeping}. To support these outcomes, peacekeepers are held to a high standard of conduct, such as avoiding in the participation of human rights abuses, as detailed in contributor signed Memorandum of Understanding \citep{MOU}. By following these codes of conduct, peacekeepers are able to effectively limit the negative consequences of conflict on the local population and deter of future violence. The protection of citizens and their freedoms by \PKOs{} generates support within previously disrupted interpersonal trust and cooperative networks that were affected by conflict \citep{goldsmith2012trust}. 
+% 168 words
+
+However, a mission's ability to generate public support is undermined in the context of conflict danger. The \UN{} functions as the principal over a peacekeeping mission and demands the mission to foster conflict resolution while treating civilians with respect \citep{kanetake2010whose}. However, when peacekeeping physical security is threatened, their responsibilities to protect civilians and human rights are shirked leading to outcomes ranging from mission under-performance to peacekeeper committed crimes \citep{butler2007security,blair2021peacekeeping}. These crimes can range from minor Category 1 allegations of misconduct to Category 2 crimes that include the sexual exploitation and abuse of civilians\footnotemark[1] \citep{horne2020relationship}. This exploitation includes increased the demand for human trafficking by visiting local brothel visits and frequenting prostitutes \citep{horne2019impact,bell2018peacekeeping} while also increasing the utilization of transaction sex between peacekeepers and civilians \citep{beber2017peacekeeping}. As a result, peacekeepers facilitate not only peace, but also human rights abuses through direct or indirect action on miss. With this evidence suggest that peacekeepers are motivated by their mandate in addition to other private gains. 
+% 185 words
+
+\footnotetext[1]{Category 1 misconduct relates to actions of sexual abuse, organized crime, abuse of authority, or major theft and fraud. Category 2 misconduct is similar to misdemeanours, ethical violations, or administrative incompetence \citep{horne2020relationship}.}
+% 35 words
+
+\subsection*{Public Opinion of Peacekeepers}
+
+While limited, evidence suggests that civilians formulate opinions about peacekeepers based on their performance on mission. \cite{mary2013peacekeepers} find that Haitian citizens preferred the protective services of the government and local police compared to \UN{} peacekeepers. In addition, citizens were primarily concerned with the mission's ability to provide necessities such as transportation, education, electricity, and water instead of human rights protections. Furthermore, \citep{gordon2017cooperation} find that Haitian citizens reported low support for peacekeepers and a reduced willingness to share information and report crime when the mission engaged in abuses of force.
+% 97 words
+
+Scholars have discovered how citizens rate the performance of their interveners, but it has failed to explain who citizens prefer to intervene, particularly when they prefer the \UN{}. United Nations peacekeeping missions have become a common tool for the international community to engage in conflict management \citep{UN_SC}. While their use has increased over time, the literature has not considered if citizens prefer the \UN{} to intervene or organizations such as the African Union and other regional institutions. This study attempts to fill this gap by evaluating how individual valuations of human rights and their perceptions of the United Nations affects their desire for the \UN{} to intervene compared to other organizations. In addition, this study will also consider whether citizens prefer the \UN{} after previously hosting a \UN{} mission. 
+% 137 words
+
+\section*{Theory}
+
+When individuals make political decisions, they rely on their values to facilitate the decision-making process. A value is a (a) concept or belief (b) about desirable ends states or behaviour (c) that transcend specific situations, (d) guides selection or evaluation of behaviour and events and (e) is ordered by relative importance \citep{schwartz1987toward}. Many values are derived from moral intuitions rooted in psychological mechanisms developed through cultural and social interactions. Some of these important values include fairness/reciprocity and harm/care as they categorize individuals in terms of sociological fairness and justice with the intent to protect the vulnerable from harm \citep{graham2009liberals}. Many of these values are reflected in human rights freedoms from murder, torture, and oppression and constitute a universal ``moral minimum'' \citep{beitz2001human} that underpins the protection of human life from unlawful impediment \citep{hopgood2013,ignatieff2000human}. With this in mind, it is not a strong assumption that all societies value some level of human rights. 
+% 160 words
+
+While all societies maintain some ``moral minimum'' of human rights, individual values can vary across cultures and personalities, especially when considering individual and group rights \citep{conrad2018torture}. Compared to Western cultures, Islamic and Asian cultures exhibit different valuations of human rights due to limitations on marriage choice, religion, and political participation while defending religious centrality and economic development, respectively. These cultures promote group-level rights to the detriment of individual-level rights as, for example, many of these cultures protect religious expression as a group while not defending an individual's freedom to leave the religious group \citep{ignatieff2000human}. This protection trade-off also applies to physical integrity rights as regions with similar state-level characteristics vary with respect to physical integrity rights \citep{richards2015respect}. Even within similar cultures, individuals vary in regard to human rights valuations. For example, individuals who support globalism, exhibit empathy, and are educated are more likely to respect human rights. In contrast, individuals who are ethnocentric, exhibit high levels of in-group loyalty, and value individual security are less likely to respect human rights \citep{mcfarland2010personality}. All cultures value human rights at some minimal level, but there is variation in human rights respect based on the culture and individual. 
+% 202 words
+
+In addition to their values, an individual's prior knowledge influences their political decision-making process. When an individual is confronted with an unknown situation, they rely on a combination of their values, prior knowledge, and experience as heuristics to make an informed decision that best matches their values \citep{conover1988role,baldwin1992relational,cantor1982prototype}. For a value to be activated, a situation must arise that threatens the value or an individual that represents that value. By experiencing the threat, or even the potential of the threat, individuals employ their cognitive heuristics to make a behavioural response that matches and protects their values \citep{jardina2019white}. These heuristics take effect when activated, such as in the context of preferences regarding the \UN{}. 
+% 123 words
+
+\subsection*{The Role of the United Nations}
+
+When the \UN{} was founded, the framers of the Charter instituted the protection of human rights as one of the main goals of the organization. The \UN{} charter declares its commitment to ``reaffirm faith in fundamental human rights, in the dignity of and worth of a human person, in the equal rights of men and women, and of nations large and small,'' \citep[p. 80]{krasno2004united}. Specifically, these rights include life, liberty, and personal security, among numerous others. With this goal at its core, the \UN{} hosts the majority of the international human rights legal system. For example, the \UN{} is responsible for the maintenance of the International Bill of Human Rights, which includes the International Covenant on Civil and Political Rights (ICCPR) and the Universal Declaration of Human Rights, numerous treaties that protect against genocide and torture, and the International Court of Justice \citep{hafner2013making}. As a result of their extensive action, the \UN{} is seen as a major player in the protection of human rights. 
+% 174 words
+
+One of the ways by which the \UN{} projects its commitment to human rights, or lack thereof, is during a peacekeeping operation. In a conflict situation, the \UN{} will deploy a PKO to separate the conflicting parties, protect civilians, and support peace-building \citep{doyle2000international}. In the context of human rights, mission mandates enumerate the responsibility of the mission to protect civilians from conflict \citep{hultman2013united}, limit sexual violence by warring parties \citep{kirschner2019does}, and deter post conflict resurgence \citep{kathman2019cut,ruggeri2017winning}. While peacekeepers successfully limit conflict related threats, they are also responsible for introducing other threats to the host population. \PKOs{} are frequently cited for allegations of misconduct and sexual exploitation \citep{karim2016explaining}. This is due to a mission's ability to limit criminal activity leaving a gap for peacekeepers to fill in the human trafficking and the sex industries \citep{horne2019impact}. These negative effects are a product of the low moral quality of peacekeepers contributed by states who provide uniformed protection for individuals seeking to engage in unaccountable violent action \citep{horne2020relationship} and the reduction of contributions from democratic, rights respecting states \citep{levin2016selectorate}. Even though the UN has attempted to frame itself as a defender of human rights, the troops that constitute the peacekeeping mission do not practice respect for human rights.\footnotemark[3]
+% 143 words
+
+\footnotetext[3]{As substantive examples, in 2000, peacekeeping forces were involved in a sex trafficking scandal due to their frequent attendance of brothels supplied with trafficked women from the former Soviet Union \citep{kirby2008peacekeepers}. In addition, peacekeepers were found facilitating a child sex ring in Haiti from 2004 to 2007 leading to 114 peacekeepers being returned to their respective countries \citep{dodds_2017}.}
+% 62 words
+
+When an individual has not been in the context of a \PKO{}, they relate to the humanitarian mission and vision of \PKOs{} and support \UN{} intervention. Individuals tend to organize themselves into groups, imagined \citep[Ex.][]{anderson2006imagined} or real, based on shared feelings, ideas, and interests creating a sense of group identification \citep{koch1994group} that spans beyond an individual's local groupings. Individuals that value human rights identify with the \UN{}’ desire to protect human rights during conflict situations with the use of \PKOs{}. An individual's values function as heuristics that create a sense of self-image with their group \citep{conover1984influence} leading to support in favour of \UN{} conflict intervention to protect civilians. With higher valuations of human rights, an individual will increase their preference for the \UN{} to lead international peacekeeping missions due to the \UN{}’ preference for the protection of human rights.  
+% 151 words
+
+Higher values for human rights protections increase an individual's preference for \UN{}-led intervention, but this preference is moderated by confidence in the \UN{}. For an individual to prefer the \UN{} as an intervener, the individual must see the institution as a legitimate wielder of power with appropriate intervention responsibility. If an individual does not see the \UN{} as a legitimate intervener, the individual will not prefer \UN{} action thereby uprooting potential good will towards the mission \citep{newby2018power}. However, individuals will prefer the \UN{} when they are confident in the institution, which develops individual consent in favour of the mission. Without civilian consent stemming from trust in the \UN{}, the mission will not be accepted, and crucial peacekeeper-civilian relationships will be undermined leading to less effective missions \citep{whalan2013peace}. 
+% 136 words
+
+From this theoretical framework, I derive a few hypotheses based on the variation of an individual's confidence in the \UN{} and their valuation of human rights. When making decisions, individuals want their choices to reflect their values and prior information \citep{simmons2006intuitive}. Individuals with high confidence in the \UN{} that also value human rights, will prefer the \UN{} to lead peacekeeping due to the organization's banner of protecting human rights. However, when the individual values human rights and is not confident in the \UN{}' ability to protect human rights, the individual will not prefer \UN{} intervention. Individuals with low confidence in the \UN{} who value human right will prefer another peacekeeping leader to ensure that human rights are protected. When confidence in the \UN{} is high and human rights valuations are low, the individual will prefer the \UN{} to lead peacekeeping efforts. Even though the individual is relatively less interested in human rights, they are still confident that the \UN{} will effectively intervene for peace and human rights. However, when the individual does not have confidence the \UN{} and does not value human rights, the individual will not prefer the \UN{} to lead peacekeeping efforts. These expectations lead to the first hypothesis, which can also be found in Table \ref{Hs}:
+% 223 words
+
+\begin{center}
+\begin{singlespace}
+\textit{H1: Confidence in the United Nations moderates the relationship between an individual's valuation of human rights and their preference for the United Nations to lead international peacekeeping. Specifically... }
+\vspace{0.2cm}
+\par \textit{H1a: When confidence in the \UN{} is \underline{high} and human rights valuations are \underline{high}, preference for the \UN{} will be \underline{high}.}
+\vspace{0.2cm}
+\par \textit{H1b: When confidence in the \UN{} is \underline{low} and human rights valuations are \underline{high}, preference for the \UN{} will be \underline{low}.}
+\vspace{0.2cm}
+\par \textit{H1c: When confidence in the \UN{} is \underline{high} and human rights valuations are \underline{low}, preference for the \UN{} will be \underline{high}.}
+\vspace{0.2cm}
+\par \textit{H1d: When confidence in the \UN{} is \underline{low} and human rights valuations are \underline{low}, preference for the \UN{} will be \underline{low}.}
+\end{singlespace}
+\end{center}
+% 120 words
+
+
+\subsection*{Effect of Peacekeeping Deployments}
+
+Individuals with high confidence in the \UN{} and a high valuation of human rights have an increased preference for the \UN{} to lead \PKOs{}, but this opinion alters when the individual comes from a state that has experienced a \PKO{}. Dramatic, political events increase issue salience that motivate individual values and heuristics \citep{conover1984influence,conover1988role,hetherington2011authoritarianism}, which include events such as peacekeeper violations of human rights. Those who have experienced a mission or have vicariously experienced the event \citep{mondak2017vicarious} form opinions about the \UN{} based on peacekeeper behaviour creating lasting effects on the host state. These effects can include poor economic structure from peacekeeping economies \citep{beber2019promise}, norms of transactional sex \citep{beber2017peacekeeping}, and even social disruption due to babies from sexual encounters with peacekeepers \citep{simic2014peacekeeper}. As a result of these lasting impacts, it is likely for individuals who never experienced a mission to blame the \UN{} for human rights violations. 
+% 171 words
+
+\begin{table}[t!]
+\renewcommand{\arraystretch}{2.0}
+\scalebox{0.8}{
+\begin{tabular}{ cc|c|c|c| }
+\multicolumn{2}{c}{}&\multicolumn{2}{c}{\begin{tabular}{c}Confidence in the United Nations\end{tabular}} \\
+\multicolumn{2}{c}{}&\multicolumn{1}{wc{30mm}}{High Confidence} & \multicolumn{1}{wc{30mm}}{Low Confidence}\\\cline{3-4}  
+\multirow{2}{*}{\begin{tabular}{c}Human Rights Valuations\end{tabular}}&\multicolumn{1}{c|}{High Valuations}  & High Preference &  Low Preference \\\cline{3-4}  
+&\multicolumn{1}{c|}{Low Valuations} & {\begin{tabular}{c}{High Preference} \\ [.5em]
+\end{tabular}}
+& Low Preference \\\cline{3-4}
+\end{tabular}
+}
+\renewcommand{\arraystretch}{1.0}
+\caption{Expectations regarding preferences for the United Nations \label{Hs}}
+\end{table}
+
+Peacekeepers as agents of the \UN{} are likely to engage in human rights violations that undermine civilian support due to monitoring problems associated with conflict. \UN{} peacekeepers are trained in their home state with the prioritization of combat and enforcement techniques \citep{hasselbladh2020military} meaning these troops are grossly unprepared to act in a humanitarian role. To fill this training gap, the \UN{} provides speed learning opportunities with the \textit{Handbook on United Nations Multidimensional Peacekeeping Operations} and the \textit{Peacekeepers Handbook} to encourage mission best practices regarding human rights. The \UN{} attempts to socialize peacekeepers to utilize these best practices, but once in conflict, troops will heavily rely on their combat training \citep{morgan_morey}. When threatened, peacekeepers will shirk their human rights training and responsibilities to focus on self-preservation and other private incentives \citep{blair2021peacekeeping} leading to agency loss. Furthermore, in the ``fog of war,'' the \UN{} is not able to effectively monitor their agent \citep{akcinaroglu2013private} allowing peacekeepers to engage in criminal behaviour \citep{horne2019impact}, including sexual exploitation \citep{butler2007security}. This lack of monitoring during the mission combined with the inability of the \UN{} to punish peacekeepers \citep{leck2009international} leads to the breakdown of civilian support for peacekeepers. The combination of directly or indirectly experiencing the negative effects of missions and the opportunity for peacekeeper misconduct leads to a reduced preference for \UN{} missions by those originally most likely to lend support. This leads to the second hypothesis:
+% 256 words
+
+\begin{center}
+\begin{singlespace}
+\textit{H2: When a state has experienced a peacekeeping operation, as confidence in the United Nations \underline{increases} and human rights valuations \underline{increase}, preference for the United Nations will \underline{decrease}.}
+\end{singlespace}
+\end{center}
+% 28 words
+
+The assumption behind Hypothesis 2 is that all peacekeeping missions are equal in terms of misconduct, but I acknowledge that this is not the case. In 2007, the United Nations General Assembly issued resolution GA/L/3320 to address and document allegations of misconduct by \UN{} mission personnel \citep{UN_Res}\footnotemark[4]. Using this data, it is observable that missions vary in levels of mission misconduct. For example, the United Nations Mission in the Central African Republic and Chad (MINURCAT) reported only one allegation of sexual exploitation and abuse from 2007 – 2010. In contrast, the United Nations Multidimensional Integrated Stabilization Mission in the Central African Republic (MINUSCA) had forty-nine allegations of sexual exploitation and abuse in 2016. Not only does misconduct vary between missions, misconduct varies within the mission as MINUSCA had zero allegations of sexual exploitation and abuse in 2014 \citep{PKAT}. This is not to say that missions only have negative ramifications, but rather that missions have multiple opportunities to develop negative associations in the minds of the host state population, particularly those with high confidence and high valuations of human rights. Due to the temporal limitations of malfeasance data, this study is not able to disentangle missions that exhibit generally ``good” behaviour from those with ``bad” behaviour. As a result, the effect of \PKOs{} on those with higher confidence and higher human rights valuations is under-reported.
+% 230 words
+
+\footnotetext[4]{The misconduct allegation data begins in 2007. As a result, only individual responses from Ethiopia 2007 could be analysed with these data creating a lack of variation in the misconduct variable.}
+% 31 words
+
+\section*{Research Design}
+
+I leverage the World Values Survey to understand individual variation in preferences for \UN{} intervention \citep{inglehart2014world}. I utilize a sub-sample of respondents from Africa as the majority of current \UN{} operations are stationed in Africa \citep{united_nations_2021,fjelde2019protection} making the unit of analysis the individual. In addition, the limited temporal scope of the World Values Survey question on the preference for \UN{} involvement in international peacekeeping, restricts the analysis to the fourth and fifth waves of the survey with the temporal range of 2001 to 2008. When the sample is at its largest, there are nine states in the sample where four of the states have experienced a \PKO{} suggesting relative balance between the states that have and have not experienced a \PKO{}. Appendix A shows a full listing of which states are in each model.
+% 148 words
+
+\subsection*{The Dependent Variable}
+
+The dependent variable is a dichotomous indicator of an individual's preference regarding \UN{} led peacekeeping. The survey question falls within a battery of questions that evaluates if certain problems could be better handled by the United Nations than by national governments or other forms of interstate action.\footnotemark[5] The responses to the question of “who should handle international peacekeeping?” include the United Nations, national governments, national governments with United Nations coordination, regional organizations, non-profit/non-governmental organizations, or commercial enterprise.\footnotemark[6] The variable was recoded as a dichotomous indicator where 1 equals a preference for the \UN{} to lead international peacekeeping. The preference for national governments with \UN{} coordination was not included in the 1 category as national governments carry less of the burden in terms of mission coordination and organizational control compared to the \UN{}.
+% 136 words
+
+\footnotetext[5]{The other items in this battery include protection of the environment, aid to developing countries, refugees, and human rights. To ensure that the relationship of interest is attributable to peacekeeping and not to a general preference for the United Nations preference, the battery of was subject to correlation analysis. The correlation between the peacekeeping question and each battery question was under a .300 correlation suggesting that an individual's preference for United Nations led peacekeeping is not solely a preference for the \UN{}.}
+% 84 words
+
+\footnotetext[6]{When the survey was conducted, the respondents originally had the option of ``no answer” or``don't know”, but upon publication of the dataset, the World Values Survey did not include these responses. As a result, individuals who did not express a preference are not included in the analysis. In addition, there is no option that captures a preference for no peacekeeping; however, these attitudes are likely captured in “no answer”, which are not included in the analysis.}
+% 76 words
+
+\subsection*{Independent Variables}
+
+The analysis includes two independent variables to capture an individual's valuation for the protection of human rights. There is no question that directly asks an individual's valuation of human rights, but other questions serve as a proxy. The first question asks the respondent if they are currently doing any volunteer work in the area of human rights. If the respondent mentions this volunteer work, the variable is coded as a 1. For the second question, the respondent was asked if they are a member of a voluntary organization for the support of human rights and whether they were an inactive or active member. The respondents were able to select the options of ``not a member”, an ``inactive member”, or an ``active member”. This variable is coded as an ordinal variable with the ranking of ``not a member'' as the base category to ``an inactive member'' and to ``active member'' as the highest rank. Due to data limitations concerning the questions, the first question will only be associated with wave four to test Hypothesis 1 while the second question will only include wave five to test Hypothesis 2.  
+% 187 words
+
+To account for the moderating effect of confidence in the United Nations, the model includes a survey item asking the respondent how confident the individual is in the United Nations.\footnotemark[7] The responses are coded in an ordinal scale with the responses of ``none at all”, ``not very much”, ``quite a lot”, and ``a great deal” in this respective order.\footnotemark[8] Human rights valuations and confidence in the \UN{} are interacted in Model 1 to test Hypothesis 1.
+% 78 words
+
+\footnotetext[7]{It might be inferred that those who have a high level of confidence in the UN will have a high valuation of human rights, but this is not the case. The correlation between confidence in the \UN{} and volunteering with a human rights group as well as if the individual was an in/active member of a human rights group did not exceed 0.12. This suggests that confidence in the UN and the human rights valuation survey items exhibit unique effects.}
+% 81 words
+
+\footnotetext[8]{A state’s current level of human rights protections may affect individual valuations of human rights, confidence in the \UN{}, and an individual's preference for the UN to lead peacekeeping. To evaluate this concern, I use the Fariss et al. (2020) latent measure of human rights protections. Correlations of the human rights measure with the human rights valuation items, confidence in the \UN{}, and \UN{} preference do not exceed 0.300 in absolute value suggesting a lack of relationship. Furthermore, when the variable is included in the model, the measure of human rights does not alter the effect of the independent variables nor does the measure reach conventional levels of significance in any model.}
+% 115 words
+
+To capture peacekeeping history, the model includes a dichotomous indicator that reflects if the state has ever experienced a \UN{} \PKO{} by the time of the survey. As explained by the theory, this accounts for the changing perspective of the individuals who directly or indirectly experienced the human rights abuses of the \PKO{}. If the state of the respondent has ever experienced a \PKO{}, the \PKO{} variable equals 1. To test Hypothesis 2, Model 2 includes a three-way interaction between human rights valuations, confidence in the \UN{}, and a state's \UN{} peacekeeping history.\footnotemark[9] 
+% 100 words
+
+\footnotetext[9]{It may be inferred that experiencing a PKO is correlated with confidence in the UN since experiencing a \UN{} \PKO{} may decrease confidence in the \UN{}. However, the correlation between experiencing a \PKO{} and confidence in the \UN{} is smaller than -.300 suggesting that the variables are weakly related and maintain unique effects.}
+% 58 words
+
+\subsection*{A Note on Experiencing a PKO}
+
+The binary indicator of \PKO{} presence assumes that each individual in a state experiences the negative aspects associated with a mission, but I argue that this a conservative assumption. Due to the conflict environment, individuals are likely to experience instances of peacekeeper misconduct. Deployed peacekeepers concentrate in locations of government-rebel violence, sites of violence against civilians, and locations with a high population density \citep{townsen2014peacekeepers}. When peacekeepers are in violent situations, they are likely to rely on their combat training and abandon their mandate objective of protecting civilians in favour of self-preservation \citep{blair2021peacekeeping} making these situations ripe for peacekeeper misconduct. These deployment locations maintain higher concentrations of civilians that are associated with high counts of peacekeeper misconduct \citep{horne2020relationship} due to the supply of individuals available to experience peacekeeper misconduct directly or indirectly through their networks. If this study were to capture local counts of peacekeeper misconduct to replace the binary indicator, the effects of peacekeeper behaviour would be much stronger suggesting the results below are conservative estimates.
+% 177 words
+
+\subsection*{Control Variables}
+
+The model includes several factors to account for alternative explanations of \UN{} preferences. The model includes variables to indicate the age of the respondent and whether the respondent was male. Next, the model captures respondent's education as an ordinal indicator with the categories of ``some compulsory elementary education”, ``completed compulsory elementary education”, ``incomplete technical/vocational school”, ``completed technical/vocational school”, ``incomplete university preparatory school”, ``completed university preparatory school”, ``some university schooling”, and ``achieving a university degree”. This variable assumes that an incomplete university preparatory school level is higher than a completed technical/vocational school level due to the ordinal scaling. Following education, the model includes a respondent's level of income measured as ``steps'' from 1 to 10. The model also labels the respondent as employed when the respondent indicates that they are employed ``full time,'' ``part time,'' or ``self-employed.'' Next, the model includes the individual's preference for ensuring secure conditions, but it is constrained to testing Hypothesis 2 due to data limitations. Last, the model indicates if the respondent's state has ever experienced a regional peacekeeping operation, such as from the African Union, using the MILINDA dataset \citep{jetschke2020milinda}. This variable is included when testing Hypothesis 2 to disentangle the presence of \UN{} and regional peacekeeping.\footnotemark[10] 
+% 207 words
+
+\footnotetext[10]{Descriptive statistics can be found in Appendix B.}
+% 8 words
+
+\subsection*{Method}
+
+Due to the binary nature of the dependent variable, I employ a logit model. Estimating a linear probability model creates unboundedness issues with the predicted probabilities at the extreme ends of the cumulative distribution \citep{studenmund}. As a result, I utilize logistic regression. The model includes clustered standard errors to capture the clustering of respondents within each state \citep{jackson2020corrected}. Last, I include state fixed effects to account for time-invariant effect within each state \citep{cunningham2021causal}; however, I drop the fixed effects since it directly correlates with the peacekeeping indicator. While the independent variables have ordinal categories, each level of the variables are estimated as separate categorical variables to avoid imposing constraints on the effects of each response category. This flexibility allows for some categories to exhibit much stronger or weaker effects than it would in a more constrained coding. 
+% 140 words
+
+\section*{Results}
+
+\begin{centering}
+\input{table1}
+\end{centering}
+
+Table \ref{M1} presents the results of the logistic model to test Hypothesis 1. The estimated coefficients in Model 1 provide initial support that a relationship exists between human rights preferences, confidence in the United Nations, and preferences for the \UN{}. The constituent term of being a volunteer is negative and significant at $p < 0.01$ meaning individuals who volunteer and have no confidence in the \UN{} are less likely to prefer \UN{} intervention. Each constituent term of confidence in the \UN{} is positive and significant at $p < 0.05$ or smaller signifying that when the individual does not support human rights, higher levels of confidence are associated with a stronger preference for the \UN{}. Furthermore, all interactions between human rights valuations and confidence in the \UN{} are positive and significant at $p < 0.01$ suggesting that those who value human rights prefer the \UN{} more when their confidence in the institution increases. 
+% 159 words
+
+While the results in Table \ref{M1} provide initial support for Hypothesis 1, interactive hypotheses are best evaluated graphically. Figure \ref{M1_fig} provides predicted probabilities based on human rights group volunteer status and confidence in the \UN{}. The control variables are held at their central tendencies. For visual ease, Figure \ref{M1_fig}\footnotemark[11] presents only the lowest and highest categories of confidence in the \UN{}, but figure with each level of confidence in the \UN{} can be found in Appendix C. First, individuals who value human rights and have a high confidence in the \UN{} demonstrate a high preference for \UN{} action (support H1a). Second, when an individual values human rights and has low confidence in the \UN{}, individual preference for the \UN{} is low (support H1b). Last, when an individual has high confidence in the \UN{} and does not value human rights, their preference for the \UN{} is high (support H1c). 
+% 157 words
+
+However, when an individual has low confidence in the \UN{} and does not value human rights, preference for the \UN{} is high (does \underline{not} support H1d). While unexpected, these individuals may not reduce their preferences due to a lack of threat on their values. Individuals whose values are not threatened maintain somewhat favourable or ambivalent attitudes towards the outcome \citep{hetherington2011authoritarianism,zilis2018minority}. Individuals who do not value human rights and have little confidence in the \UN{} do not find their values to be threatened leading to ambivalence regarding \UN{} intervention. In contrast, those who value human rights and have little confidence in the \UN{} perceive the \UN{} peacekeeping as a threat to human rights thereby reducing their preference for \UN{} intervention. As a result, these findings demonstrate general support for \UN{} intervention, unless preferences for human rights protections are perceived to be threatened by the institution. 
+% 157 words
+
+\begin{figure}[h!]
+\begin{centering}
+\includegraphics[width=120mm]{coef_m1.jpg}
+\caption{\small Margins plot with 95\% confidence intervals to evaluate Hypothesis 1. }
+\label{M1_fig}
+\end{centering}
+\end{figure}
+
+The control variables provide further insight regarding individual preferences for the \UN{}. First, males are about 4.5\% more likely to prefer the \UN{} compared to females. Second, each unit increase in education increases the likelihood of \UN{} preference by 1.2\% suggesting that increasingly more educated people support \UN{} action. Last, a one unit increase in income is associated with a 1.2\% increase in the likelihood of \UN{} preference, meaning wealthier individuals are more likely to prefer the \UN{}. 
+% 147 words
+
+\footnotetext[11]{A margins plot with all categories of confidence in the \UN{} can be found in Appendix C.}
+% 18 words
+
+\subsection*{Testing Hypothesis 2}
+
+After finding support for most facets of Hypothesis 1, I now turn to Hypothesis 2. I expect that when a state has experienced a peacekeeping operation, increases in both confidence in the \UN{} and human rights valuations will decrease preferences for the \UN{} to lead a \PKO{}. Due to data limitations, this model uses the second human rights valuation proxy that captures if the individual is part of a voluntary human rights organization and their membership activity. In addition, the models will not include state fixed effects as they are highly collinear with the peacekeeping indicator.
+% 99 words
+
+\begin{figure}[h!]
+\begin{centering}
+\includegraphics[width=120mm]{coef_m2.jpg}
+\caption{\small Marginal effect plot with 95\% confidence intervals to evaluate Hypothesis 2.}
+\label{figure 2}
+\end{centering}
+\end{figure}
+
+Due to the complex nature of a reading a triple interaction term, the table containing the results of the model can be found in Appendix D. Instead, Figure \ref{figure 2} presents a marginal effect plot to evaluate Hypothesis 2. The graph only displays the lowest and highest categories of confidence in the \UN{} with control variables held at their central tendencies.\footnotemark[12] Figure \ref{figure 2} demonstrates that only when an individual has ``a great deal'' of confidence and is either an inactive or active member of a human rights organization does the effect of experiencing a \PKO{} significantly reduce an individual's preference for the \UN{} at $p < 0.05$. For inactive members with a great deal of confidence in the \UN{}, experiencing a \PKO{} decreases the probability of preferring \UN{} intervention by about 20\%. For active members with a great deal of confidence, experiencing a \PKO{} decreases the probability of preferring \UN{} intervention by about 35\%. Due to the substantial negative impact of experiencing a \PKO{} on the likelihood of preferring \UN{} given human rights valuations and confident in the institution, the results lend support to Hypothesis 2. 
+% 195 words
+
+Interestingly, when an individual is not a member of a human right group and has no confidence in the \UN{}, the effect of experiencing a \PKO{} increases the preference for the \UN{} to lead peacekeeping at $p < 0.05$. This finding, while counter to the theory, can be explained by expectancy violations theory. This framework explains that when expected outcomes are not reached, individuals update their information to conform to the unexpected result \citep{johnston2015emotion,niven2000other}. Individuals who place little value on human rights and maintain low confidence in the \UN{} expected the mission to perform poorly. However, peacekeepers are efficient conflict managers \citep{fortna2004interstate} causing these individuals to develop positive attitudes towards the \UN{} after experiencing an unexpected outcome. As a result, these individuals had a low expectation of the mission, but formed approving opinions towards the \UN{} after learning about the effects of the mission. 
+% 156
+
+\footnotetext[12]{A marginal effect plot with all categories of confidence in the \UN{} can be found in Appendix E.}
+% 19 words
+
+\section*{Conclusion}
+
+United Nations led peacekeeping missions are increasingly utilized conflict management in the international system. Public opinion research on conflict intervention finds that humanitarian intervention generates wide public support, but scholars have not sufficiently investigated support for \UN{} intervention. While studies such as \cite{mary2013peacekeepers} and \cite{gordon2017cooperation} began to understand the dynamics between citizens and peacekeepers, scholars have failed to understand when individuals would prefer the \UN{} to lead peacekeeping operations. In this study, I developed a theoretical argument to explain how individuals use their valuations of human rights and confidence in the \UN{} when making decisions regarding preferences for \UN{} intervention. I find that those who have confidence in the \UN{} and value human rights are more likely to approve of the \UN{} to lead peacekeeping operations. However, this relationship is reversed when the individual lives in a state that previously hosted a \UN{} mission. This conclusion suggests that while \UN{} missions effectively generate peace, citizens may prefer a different conflict intervener should violence resume. 
+% 178 words
+
+This study signals to policymakers that future \PKOs{} should prioritize the establishment of local legitimacy to create sustainable peace and protect human rights. When an intervening force is trusted by the host population, the mission is able to glean private information to proactively respond to civilian issues and potential violent action by peace spoilers \citep{furnari2015relationships}. One avenue to build trust is through implementing Quick Impact Projects to rebuild communities devastated by conflict. These projects rebuild community infrastructure while also giving the mission the opportunity to work alongside citizens. These opportunities allow peacekeepers to promote trust and confidence in the mission's ability to limit conflict \citep{QIPs,gordon2017cooperation}. Furthermore, policymakers should increase the utilization of non-governmental organizations to effectively monitor peacekeeper behaviour. Peacekeepers who are monitored by non-governmental organizations are less likely to engage in human rights abuses due to fear of punishment for their bad behaviour \citep{keck1998activists}. The limitation of peacekeeper human rights abuses will ease some of the lasting negative impact of hosting a peacekeeping operation allowing for increased preference for the \UN{} to engage in conflict intervention. 
+% 189 words
+
+Future studies should continue to consider how various factors affect the public opinion of \UN{} peacekeepers. First, scholars should investigate how the public responds to the announcement of a peacekeeping operation. Visits by high-level foreign leaders have been found to increase the receiving state's public opinion regarding the sending state \citep{goldsmith2021does}. Citizens in civil conflict countries may have a poor opinion of the \UN{} pre-announcement, but the institution may receive a boost in public support after the announcement. Second, the ethnic diversity found in \UN{} missions may affect citizen support for the \UN{}. \cite{nomikos2022peacekeeping} finds that the \UN{} effectively increase citizen willingness to cooperate with other social groups. However, citizens may not cooperate with peacekeeping operations if the mission's ethnic diversity is increasingly heterogeneous or culturally different from the individual leading to reduced public approval of the mission. 
+% 147 words
+
+\newpage % Page break to seperate the work from the bibliography. 
+\singlespacing
+\bibliographystyle{apsr_2} % My citation style is Chicago
+\bibliography{/Users/treywood/Dropbox/Projects/Active_Projects/PKO_and_PO/Paper/PKO_PO.bib} % This locates my bibliographic information
+
+
+\end{document}

@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} % Create 1 inch margins
+\usepackage{natbib} % Citation package 
+\usepackage{indentfirst} % Indent the first paragraph of the 1st paragraph of each new section. 
+\usepackage{setspace} % Package to set my line spacing
+\usepackage[bottom]{footmisc}
+\doublespacing % declare double space
+\interfootnotelinepenalty=999999999
+\usepackage{sectsty}
+\sectionfont{\normalfont\fontfamily{ptm}\fontsize{12}{12}\bfseries}
+\subsectionfont{\normalfont\fontfamily{ptm}\fontsize{12}{12}\itshape}
+\usepackage{times} % Text font as TNR
+\usepackage{graphicx} % Include images 
+%\usepackage[none]{hyphenat} % Stops breaking up words at the right side of the page. 
+\usepackage{comment} % Pakeage to let me comment out large secitons at a time.
+\usepackage{xurl} % Fix urls on the page
+\usepackage{graphicx} % Include Graphics
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref} % Hyperlink to figures and bibliography
+\usepackage{fancyhdr} % All of this is to put the page number at the bottom right
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % This says to not put the line at the top of the apge that makes it "fancy".
+\setlength{\parindent}{1cm}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+\usepackage{soul} % Fix wrapping of underlined text
+\usepackage[font=small]{caption} %Change the size of the "Figre XX" caption part. 
+\usepackage{xcolor}
+\usepackage{import}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{longtable}
+
+\newcommand{\fix}[1]{\section{FIX}\LARGE\color{red}#1}
+\newcommand{\Dan}[1]{\par\color{red}\underline{Note for Dan:} \color{black}#1}
+\newcommand{\UN}[1]{United Nations}
+\newcommand{\PKO}[1]{peacekeeping operation}
+\newcommand{\PKOs}[1]{peacekeeping operations}
+
+\title{Highly-Valued Peacekeepers \\
+\large The Effects of Individual Values and Context on the Preference for Peacekeepers \\
+\textbf{Online Appendix}}
+%\author{Robert Wood \\
+%University of Kentucky}
+\date{\today}
+
+
+\begin{document}
+
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+
+\appendix 
+
+\renewcommand{\thesection}{Appendix \Alph{section}}
+\setcounter{section}{0}
+
+\renewcommand{\thetable}{\Alph{section}\arabic{table}}
+\setcounter{table}{0}
+
+\renewcommand{\thefigure}{\Alph{section}\arabic{figure}}
+\setcounter{figure}{0}
+
+
+\begin{centering}
+\section{}
+\end{centering}
+
+\begin{centering}
+\input{Missions_In_Sample}
+\end{centering}
+
+\clearpage
+
+\begin{centering}
+\section{}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\end{centering}
+
+
+\begin{centering}
+\input{des_stats_m1.tex}
+\label{Table 4}
+\end{centering}
+
+\begin{centering}
+\input{des_stats_m2.tex}
+\label{Table 5}
+\end{centering}
+
+\clearpage
+
+\begin{centering}
+\section{}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\end{centering}
+
+
+\begin{figure}[h!]
+\begin{centering}
+\includegraphics[width=130mm]{coef_m1_full.jpg}
+\caption{\small Margins plot with 95\% confidence intervals. It includes all levels of confidence in the UN.}
+\label{figure 3}
+\end{centering}
+\end{figure}
+
+\clearpage
+
+\begin{centering}
+\section{}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\end{centering}
+
+\begin{centering}
+%\input{table2}
+\input{table_2_long}
+\end{centering}
+
+
+\clearpage
+
+\begin{centering}
+\section{}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\end{centering}
+
+\begin{figure}[h!]
+\begin{centering}
+\includegraphics[width=130mm]{coef_m2_full.jpg}
+\caption{\small Marginal effect plot with 95\% confidence intervals. It includes all levels of confidence in the UN.}
+\label{figure 4}
+\end{centering}
+\end{figure}
+
+
+
+
+\end{document}

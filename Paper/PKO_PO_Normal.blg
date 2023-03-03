@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: PKO_PO_Normal.aux
+The style file: apsr_2.bst
+Database file #1: /Users/treywood/Dropbox/Projects/Active_Projects/PKO_and_PO/Paper/PKO_PO.bib
+Repeated entry---line 815 of file /Users/treywood/Dropbox/Projects/Active_Projects/PKO_and_PO/Paper/PKO_PO.bib
+ : @article{butler2007security
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--no journal in MOU
+Warning--no number and no volume in MOU
+Warning--no number and no volume in blair2021peacekeeping
+Warning--page numbers missing in blair2021peacekeeping
+Warning--empty institution in PKAT
+Warning--no number and no volume in ignatieff2000human
+Warning--page numbers missing in ignatieff2000human
+Warning--no number and no volume in inglehart2014world
+Warning--page numbers missing in inglehart2014world
+Warning--no number and no volume in koch1994group
+You've used 87 entries,
+            2859 wiz_defined-function locations,
+            1099 strings with 18347 characters,
+and the built_in function-call counts, 55865 in all, are:
+= -- 4744
+> -- 3751
+< -- 1
++ -- 1090
+- -- 1322
+* -- 4912
+:= -- 10306
+add.period$ -- 255
+call.type$ -- 87
+change.case$ -- 511
+chr.to.int$ -- 86
+cite$ -- 97
+duplicate$ -- 1539
+empty$ -- 3553
+format.name$ -- 1494
+if$ -- 10188
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 87
+newline$ -- 432
+num.names$ -- 868
+pop$ -- 389
+preamble$ -- 1
+purify$ -- 1116
+quote$ -- 0
+skip$ -- 1611
+stack$ -- 0
+substring$ -- 3231
+swap$ -- 504
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1646
+warning$ -- 10
+while$ -- 909
+width$ -- 0
+write$ -- 1122
+(There was 1 error message)

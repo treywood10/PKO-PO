@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} % Create 1 inch margins
+\usepackage{natbib} % Citation package 
+\usepackage{indentfirst} % Indent the first paragraph of the 1st paragraph of each new section. 
+\usepackage{setspace} % Package to set my line spacing
+\usepackage[bottom]{footmisc}
+\doublespacing % declare double space
+\interfootnotelinepenalty=999999999
+\usepackage{sectsty}
+\sectionfont{\normalfont\fontfamily{ptm}\fontsize{12}{12}\bfseries}
+\subsectionfont{\normalfont\fontfamily{ptm}\fontsize{12}{12}\bfseries\itshape}
+\usepackage{times} % Text font as TNR
+\usepackage{graphicx} % Include images 
+\usepackage{comment} % Pakeage to let me comment out large secitons at a time.
+\usepackage{xurl} % Fix urls on the page
+\usepackage{graphicx} % Include Graphics
+\usepackage{array}
+\usepackage[font=small]{caption} %Change the size of the "Figre XX" caption part. 
+\usepackage{subcaption}
+\usepackage{titling}
+\usepackage{hyperref} % Hyperlink to figures and bibliography
+\usepackage{fancyhdr} % All of this is to put the page number at the bottom right
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % This says to not put the line at the top of the apge that makes it "fancy".
+\setlength{\parindent}{1cm}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+\usepackage{soul} % Fix wrapping of underlined text
+\usepackage{xcolor}
+\usepackage{import}
+\usepackage{multirow}
+
+
+\title{Highly-Valued Peacekeepers \\
+\large The Effects of Individual Values and Context on the Preference for Peacekeepers \\
+\textbf{Tables}}
+%\author{Robert Wood \\
+%University of Kentucky}
+\date{\today}
+
+\begin{document}
+ 
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+\clearpage 
+
+\begin{table}[h]
+\renewcommand{\arraystretch}{2.0}
+\scalebox{0.8}{
+\begin{tabular}{ cc|c|c|c| }
+\multicolumn{2}{c}{}&\multicolumn{2}{c}{\begin{tabular}{c}Confidence in the United Nations\end{tabular}} \\
+\multicolumn{2}{c}{}&\multicolumn{1}{wc{30mm}}{High Confidence} & \multicolumn{1}{wc{30mm}}{Low Confidence}\\\cline{3-4}  
+\multirow{2}{*}{\begin{tabular}{c}Human Rights Valuations\end{tabular}}&\multicolumn{1}{c|}{High Valuations}  & High Preference &  Low Preference \\\cline{3-4}  
+&\multicolumn{1}{c|}{Low Valuations} & {\begin{tabular}{c}{High Preference} \\ [.5em]
+\end{tabular}}
+& Low Preference \\\cline{3-4}
+\end{tabular}
+}
+\renewcommand{\arraystretch}{1.0}
+\caption{Expectations regarding preferences for the United Nations \label{Hs}}
+\end{table}
+% 33 words
+
+\clearpage 
+
+\begin{centering}
+\input{table1}
+\end{centering}
+% 123 words
+
+\clearpage
+
+\end{document}
